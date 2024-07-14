@@ -1,7 +1,73 @@
 body{
     font-family: 'Raleway' sans-serif !important; 
+    color: #ffffff;
+    background-color: black;
+}
+head{
+    text-decoration: none;
+    margin-left: 20px;
+}
+/*  header  */
+.navbar{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    background-color: #0EE5FF;
+    
+}
+.navbar-brand img{
+    width: 2rem;
 }
 
 .img-work{
     height: 200px;
+} 
+
+
+/*  quienes somos  */
+
+.qc p{
+    text-align: left;
+}
+
+
+.qc i{
+    background-color: #0EE5FF;
+    display: block;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+/*  destacados  */
+.card {
+    background-color: #0EE5FF;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.card img{
+    height: 200px;
+}
+
+/*  contacto  */
+
+/*  footer  
+footer{
+    background-color: #0EE5FF;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+ */
+footer{
+    background-color: #0EE5FF;
+    height: 60px;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+h2{
+    text-align: center;
 }

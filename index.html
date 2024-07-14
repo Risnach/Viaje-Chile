@@ -17,8 +17,8 @@
 </head>
 <body> 
     <!--7mo hacer el navbar con el carusel-->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header id="inicio">
+        <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/viajes.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -30,23 +30,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link nav-item active text-white"  href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Quienes Somos</a>
+                        <a class="nav-link nav-item active text-white"  href="#quienessomos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Destacados</a>
+                        <a class="nav-link nav-item active text-white" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        <a class="nav-link nav-item active text-white" href="#contacto">Contacto</a>
                         </li>
                     </ul>  
                 </div>
             </div>
         </nav>
         <!--7mo.1 hacer el carusel sacar de bootstrap-->
-        <div>
+        <div class="col-12">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active"> 
@@ -72,28 +72,26 @@
     </header>
 
     <!--8vo hacer el quienes somos-->
-    <section>
+    <section id="quienessomos" class="qc d-none d-md-block">
         <div class="container py-4" >
-            <h2 class="text-center display-7 fw-bold my-3">¿QUIENES SOMOS?</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <i class="fa-solid fa-plane fa-3x mb-3"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fa-solid fa-mountain fa-3x mb-3"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fa-solid fa-route fa-3x mb-3"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
-                </div>
+            <h2 >¿QUIENES SOMOS?</h2>
+            <div>
+                <div class="row mt-5">
+                    <div class="col-sm">
+                    <i class="fa-solid fa-plane fa-xl"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+                    </div>
+                    <div class="col-sm">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+                    <i class="fa-solid fa-mountain fa-xl"></i>
+                    </div>
+                    <div class="col-sm">
+                    <i class="fa-solid fa-route fa-xl"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+                    </div>
+                    </div>
             </div>
-
-
-
-
-
+            </div> 
         </div>
 
 
@@ -101,28 +99,28 @@
     </section>
 
     <!--9no hacer el destacados-->
-    <section class=" my-3 p-5">
-        <h2 class="text-center display-7 fw-bold my-3">DESTACADOS</h2>
-        <div class="row">
-            <div class="col-12 col-md-4 py-4">
+    <section id="destacados" class=" container my-5">
+        <h2>DESTACADOS</h2>
+        <div class="row ">
+            <div class="card col-12 col-md-3 my-4">
                 <img src="./assets/img/card1.jpg" class="card-img-top img-work">
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 py-4">
+            <div class="card col-12 col-md-3 my-4">
                 <img src="./assets/img/card2.jpg" class="card-img-top img-work">
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 py-4">
+            <div class="card col-12 col-md-3 my-4">
                 <img src="./assets/img/card3.jpg" class="card-img-top img-work">
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 py-4">
+            <div class="card col-12 col-md-3 my-4">
                 <img src="./assets/img/card4.jpg" class="card-img-top img-work">
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
@@ -133,8 +131,8 @@
 
 
     <!--10mo hacer el contacto-->
-    <section class="container my-5">
-        <h2 class="text-center display-7 fw-bold my-3">CONTACTO</h2>
+    <section id="contacto" class="container my-5">
+        <h2>CONTACTO</h2>
         <form>
             <!--10mo.1 hacer el nombre-->
             <div class="form-group mb-4">
@@ -152,8 +150,8 @@
                 <textarea class="form-control" placeholder="Escribe aqui tu mensaje"></textarea>
             </div>
             <!--10mo.4 hacer el boton-->
-            <div>
-                <button class="btn btn-info text-light">Enviar</button>
+            <div class="d-grid gap-2">
+                <button  class="btn btn-info text-light">Enviar</button>
             </div>
         </form>
     </section>
@@ -162,13 +160,13 @@
 
     <!--11vo hacer el pie de firma-->
     <footer class="ms-2 me-2">
-        <div class="col-12 d-flex justify-contenet-around">
+        <div class="col-12 d-flex justify-content-around">
             <h3>VIAJES CHILE</h3>
             <div>
-                <a href="#" target="_blank"><i class="fa-brands fa-square-github "></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-square-x-twitter "></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-square-facebook "></i></a>
+                <a href="https://github.com/features/copilot" target="_blank"><i class="fa-brands fa-square-github text-white"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a>
+                <a href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-square-x-twitter text-white"></i></a>
+                <a href="https://www.facebook.com/watch/?ref=tab" target="_blank"><i class="fa-brands fa-square-facebook text-white"></i></a>
             </div>
         </div>
     </footer>
